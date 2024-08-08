@@ -24,4 +24,7 @@ call .\make-shortcut.bat
 
 call .\launch-windows.bat --launch_mode webinstall
 
+cd dlbackend\comfy\ComfyUI\custom_nodes
+git clone https://github.com/ltdrdata/ComfyUI-Manager
+
 IF %ERRORLEVEL% NEQ 0 ( pause )
